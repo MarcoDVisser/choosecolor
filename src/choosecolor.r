@@ -28,7 +28,6 @@
 # pick = logical, should the function return a hex code of the color picked
 # or just return the locations of the colors (for use in other functions).
 
-
 color.choose<-function(detail=100,pick=TRUE){
 # dimensions
 N<-detail
