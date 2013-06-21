@@ -1,1 +1,1 @@
-export(choosecolor)
+export(color.choose,color.wheel,palette.picker,color.pick)
