@@ -13,7 +13,7 @@ It's nothing fancy, just functional. I hope somebody may find it useful.
 
 Currently there isn't a release on [CRAN](http://cran.r-project.org/),
 and I don't think there ever will be. You can 
-download the [zip ball](https://github.com/MarcoDVisser/choosecolor/zipball/master) 
+download the [zip](https://github.com/MarcoDVisser/choosecolor/zipball/master) 
 or [tar ball](https://github.com/MarcoDVisser/choosecolor/tarball/master).
 Then decompress and run `R CMD INSTALL` on it, 
 or use the **devtools** package to install the development version
