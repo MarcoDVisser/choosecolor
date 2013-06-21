@@ -29,7 +29,7 @@ or use the **devtools** package to install the development version
 update.packages()
 ## devtools is required
 library(devtools)
-install_github("findPackage", "Dasonk")
+install_github("choosecolor", "MarcoDVisser")
 ```
 
 Or find the relavent functions in /src and just 
