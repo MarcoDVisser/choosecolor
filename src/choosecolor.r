@@ -107,7 +107,6 @@ colorGrid<-expand.grid(ColVals, ColVals, ColVals)
 image(colorGrid)
 }
 
-
 # R color name picker, very simple color picker
 # returns the R color names from the list of colors in 
 # colors()

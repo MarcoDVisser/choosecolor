@@ -11,8 +11,8 @@ using the locator functionality in R.
 Credits:
 The inspiration for this comes from [dsparks](https://gist.github.com/dsparks/4021110).
 However I wanted to have similar functionality as the `color_picker.R` 
-version without the heavy overhead (e.g. packages), more colors,
-and a simpler plot to pick from.
+version from dsparks without the heavy overhead (e.g. packages), 
+more colors, and a simpler plot to pick from.
 
 ## Installation
 
@@ -20,6 +20,7 @@ Currently there isn't a release on [CRAN](http://cran.r-project.org/),
 and I don't think there ever will be. You can 
 download the [zip ball](https://github.com/MarcoDVisser/choosecolor/zipball/master) 
 or [tar ball](https://github.com/MarcoDVisser/choosecolor/tarball/master).
+Find the relavent functions in /src.
 
 And if you are really going to use it often (like me) just add it to 
 your .Rprofile!
