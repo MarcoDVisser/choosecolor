@@ -1,4 +1,3 @@
-
 \name{palette.picker}
 \alias{palette.picker}
 \title{Choose a palette interactively from a grid}
@@ -18,7 +17,7 @@ detail: an integer specifying detail within the color wheel.
   graphics.
 }
 \examples{
-#make a pallete
+#make a palette
 require(datasets)
 #Select 5 colors
 Mypalette<-palette.picker(n=5)

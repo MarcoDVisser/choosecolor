@@ -11,7 +11,7 @@ detail: an integer specifying detail within the color wheel.
 }
 
 \description{
-   color.wheel allow greater detail in color selection compared to
+   color.wheel allows greater detail in color selection compared to
    color.choose(). The user first chooses the color and then the 
    lightness of the color.
 }

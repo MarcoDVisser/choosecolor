@@ -51,7 +51,7 @@ color.choose<-function(detail=100,pick=TRUE){
 		 
 		 return(ColVals[which(dist==min(dist))])
 		}
-	else {return(locations)}
+	else {return(cbind(ColVals,locations))}
 }
 
 # The following function lets you choose a range of colors 
