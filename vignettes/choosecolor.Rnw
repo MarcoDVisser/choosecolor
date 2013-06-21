@@ -23,7 +23,8 @@ This is an example session using color.choose():
 library(choosecolor)
 @
 
-$
+\begin{verbatim}
+
 # pick a color
 mycol<-color.choose()
 plot(rnorm(100),col=mycol)
@@ -39,6 +40,6 @@ require(datasets)
 Mypalette<-palette.picker(n=5) 
 # plot an image with the new palette
 image(x,y,volcano,col=Mypalette(1000))
-$
+\end{verbatim}
 
 \end{document}
