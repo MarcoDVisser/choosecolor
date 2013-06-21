@@ -27,8 +27,8 @@ library(devtools)
 install_github("choosecolor", "MarcoDVisser")
 ```
 
-Or find the relevant functions in /src and just 
-add the source code to your .Rprofile!
+Or find the relevant functions in /R and just 
+add the source code to your .Rprofile.
  
 ## Usage Examples
 
