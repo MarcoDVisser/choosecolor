@@ -22,7 +22,7 @@ download the [zip ball](https://github.com/MarcoDVisser/choosecolor/zipball/mast
 or [tar ball](https://github.com/MarcoDVisser/choosecolor/tarball/master).
 Then decompress and run `R CMD INSTALL` on it, 
 or use the **devtools** package to install the development version
-(following code courtesy of [dasonk](https://github.com/Dasonk).
+(following code courtesy of [dasonk](https://github.com/Dasonk) ).
 
 ```r
 ## Make sure your current packages are up to date
