@@ -1,6 +1,7 @@
 %\VignetteIndexEntry{choosecolor}
 \documentclass{article}
 
+\usepackage{Sweave}
 \begin{document}
 %\SweaveOpts{concordance=TRUE}
 
@@ -19,26 +20,11 @@ more or less detail.
 
 This is an example session using color.choose():
 
-<<example>>=
-library(choosecolor)
-@
-
-$
-# pick a color
-mycol<-color.choose()
-plot(rnorm(100),col=mycol)
-
-
-# Get more detail in choice with the color wheel
-mycol<-color.wheel()
-plot(rnorm(100),col=mycol)
-
-#make a pallete 
-require(datasets)
-#Select 5 colors
-Mypalette<-palette.picker(n=5) 
-# plot an image with the new palette
-image(x,y,volcano,col=Mypalette(1000))
-$
-
-\end{document}
+\begin{Schunk}
+\begin{Sinput}
+> library(choosecolor)
+> # pick a color
+> mycol<-color.choose()
+> plot(rnorm(100),col=mycol)
+> # Get more detail in choice with the color wheel
+> mycol<-color.wheel()
