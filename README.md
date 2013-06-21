@@ -4,16 +4,10 @@ choosecolor
 Quickly choosing colors and making palettes in R can be a chore.
 The functions in `choosecolor` are a simple set of functions 
 which can help to rapidly select  colors in R.  Using the "locator"
-functionality in R. It enables an interactive way of selecting colors 
-visually for use in R graphics. It's nothing fancy, just functional.
+functionality in R, it enables an interactive way of selecting colors 
+visually for use in R graphics. 
 
-Credits:
-The inspiration for this comes from [dsparks](https://gist.github.com/dsparks/4021110),
-[menugget](http://menugget.blogspot.nl/2013/01/choosing-colors-visually-with-getcolors.html#more)
-and [aviadklein](http://aviadklein.wordpress.com/2010/05/21/color-choosing-made-easy/).
-However I wanted to have similar functionality as the `color_picker.R` 
-version from dsparks (or the other two) but without the heavy overhead (e.g. packages), with 
-more colors, and a simpler plot to pick from.
+It's nothing fancy, just functional. I hope somebody may find it useful.
 
 ## Installation
 
@@ -52,3 +46,10 @@ Mypalette(10)
 color.wheel()
 
 ```
+Credits:
+The inspiration for this comes from [dsparks](https://gist.github.com/dsparks/4021110),
+[menugget](http://menugget.blogspot.nl/2013/01/choosing-colors-visually-with-getcolors.html#more)
+and [aviadklein](http://aviadklein.wordpress.com/2010/05/21/color-choosing-made-easy/).
+However I wanted to have similar functionality as the `color_picker.R` 
+version from dsparks (or the other two) but without the heavy overhead (e.g. packages), with 
+more colors, and a simpler plot to pick from.
