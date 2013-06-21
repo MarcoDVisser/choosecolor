@@ -78,32 +78,22 @@ ColPick<-character(n)
 
 # WORK IN PROGRESS
 # This function does not work YET!
-color.wheel<-function(){
+color.wheel<-function(detail=200){
+# dimensions
+N<-detail
+#Values
+values<-seq(0,1,length.out=N)
+ColVals<-sapply(1:detail,function(X) hsv(h=values,s=1,v=1))
+
+#plot circle
+plot(0,0,type='n',fg='white',xaxt='n',yaxt='n',xlab='',ylab='')
 # Color radians (think of a color wheel)
-ColRad<-seq(-pi,pi,length.out=100)
-# Color combinations
+x=seq(-pi,pi,length.out=detail)
+radii<-c(0.85,0.75,0.65)
+points(x=radii[1]*sin(x),y=radii[1]*cos(x),lwd=16,col=ColVals)
+points(x=radii[2]*sin(x),y=radii[2]*cos(x),lwd=16,col=ColVals)
+points(x=radii[3]*sin(x),y=radii[3]*cos(x),lwd=16,col=ColVals)
 
-combn(c("Red","Blue","Green"),m=2)
-
-
-# Color intensities (light to dark) 
-# given by sin wave
-IntRed<-(sin(3*ColRad)+1)/2
-IntBlue<-(sin(3*ColRad+pi)+1)/2
-IntGreen<-(sin(2*ColRad+(0.5*pi))+1)/2
-
-
-
-plot(ColRad,IntRed,col='red')
-lines(ColRad,IntBlue,col='blue')
-lines(ColRad,IntGreen,col='green')
-#
-plot(ColRad,IntRed,col=rgb(IntRed,IntBlue,IntGreen))
-
-
-#color grid
-colorGrid<-expand.grid(ColVals, ColVals, ColVals)
-image(colorGrid)
 }
 
 # R color name picker, very simple color picker
