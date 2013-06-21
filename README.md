@@ -11,7 +11,7 @@ using the locator functionality in R.
 Credits:
 The inspiration for this comes from [dsparks](https://gist.github.com/dsparks/4021110).
 However I wanted to have similar functionality as the `color_picker.R` 
-version from dsparks without the heavy overhead (e.g. packages), 
+version from dsparks without the heavy overhead (e.g. packages), with 
 more colors, and a simpler plot to pick from.
 
 ## Installation
@@ -25,7 +25,7 @@ Find the relavent functions in /src.
 And if you are really going to use it often (like me) just add it to 
 your .Rprofile!
  
-Usage
+Usage 
 
 ```r
 # pick a color
