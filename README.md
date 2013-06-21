@@ -32,10 +32,10 @@ Usage Examples
 mycol<-color.choose()
 
 #make a pallete 
-Mypallet<-pallette.picker(n=5) 
+Mypalette<-palette.picker(n=5) 
 
-# use your pallete e.g.
-Mypallete(10)
+# use your palette e.g.
+Mypalette(10)
 
 # Get more detail in choice with the color wheel
 color.wheel()
