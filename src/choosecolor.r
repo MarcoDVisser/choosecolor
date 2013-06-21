@@ -81,6 +81,7 @@ ColPick<-character(n)
 
 plotWheel<-function(Colcode,radius=0.5,detail,arrowloc,
 arrowcol){
+	par(mar=c(0,0,0,0))
 	plot(0,0,type='n',fg='white',xaxt='n',yaxt='n',xlab='',ylab='')
 	# Color radians (think of a color wheel)
 	x<-seq(-pi,pi,length.out=detail)

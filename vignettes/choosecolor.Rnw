@@ -20,7 +20,7 @@ more or less detail.
 This is an example session using color.choose():
 
 <<example>>=
-library(color.choose())
+library(choosecolor)
 
 # pick a color
 mycol<-color.choose()
