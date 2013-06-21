@@ -55,8 +55,8 @@ color.choose<-function(detail=100,pick=TRUE){
 }
 
 # The following function lets you choose a range of colors 
-# to convert to a pallet function
-# usage: MyPallete<-pallete.picker()
+# to convert to a palette function
+# usage: MyPallete<-palette.picker()
 # n = number of colors to pick for your pallete
 # detail = smoothness of color plot (large values may slow the process
 # 		   down considerably.
@@ -65,7 +65,7 @@ color.choose<-function(detail=100,pick=TRUE){
 # Note this is the quick and dirty version which can be 
 # made much more efficient
 
-pallete.picker=function(n=6,detail=100){
+palette.picker=function(n=6,detail=100){
 
 ColPick<-character(n)
 
@@ -104,7 +104,8 @@ arrowcol){
 color.wheel<-function(detail=200){
 
 	#Values
-	values<-seq(0,1,length.out=N)
+	x<-seq(-pi,pi,length.out=detail)
+	values<-seq(0,1,length.out=detail)
 	HueVals<-sapply(1:detail,function(X) hsv(h=values,s=1,v=1))
 
 	#plot color wheel

@@ -39,4 +39,5 @@ Mypallete(10)
 
 # Get more detail in choice with the color wheel
 color.wheel()
+
 ```
