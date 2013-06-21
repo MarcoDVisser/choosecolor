@@ -25,7 +25,7 @@ Find the relavent functions in /src.
 And if you are really going to use it often (like me) just add it to 
 your .Rprofile!
  
-Usage 
+Usage Examples
 
 ```r
 # pick a color
@@ -36,4 +36,7 @@ Mypallet<-pallette.picker(n=5)
 
 # use your pallete e.g.
 Mypallete(10)
+
+# Get more detail in choice with the color wheel
+color.wheel()
 ```
