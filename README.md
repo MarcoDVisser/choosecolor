@@ -1,12 +1,11 @@
 choosecolor
 ==========
 
-The functions in `choosecolor` are meant to help find colors in R. 
-It's nothing fancy, just functional.
-
-Quicky choosing colors and making pallets in R can be a chore.
-This is a simple set of functions to help choose colors in R,
-using the locator functionality in R.
+Quickly choosing colors and making palettes in R can be a chore.
+The functions in `choosecolor` are a simple set of functions 
+which can help to rapidly select  colors in R.  Using the "locator"
+functionality in R. It enables an interactive way of selecting colors 
+visually for use in R graphics. It's nothing fancy, just functional.
 
 Credits:
 The inspiration for this comes from [dsparks](https://gist.github.com/dsparks/4021110),
@@ -34,10 +33,10 @@ library(devtools)
 install_github("choosecolor", "MarcoDVisser")
 ```
 
-Or find the relavent functions in /src and just 
+Or find the relevant functions in /src and just 
 add the source code to your .Rprofile!
  
-Usage Examples
+## Usage Examples
 
 ```r
 # pick a color
