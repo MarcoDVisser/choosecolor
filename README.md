@@ -1,8 +1,8 @@
 choosecolor
 ==========
 
-The `choosecolor` function help find colors in R. 
-Nothing fancy, just functional.
+The functions in `choosecolor` are meant to help find colors in R. 
+It's nothing fancy, just functional.
 
 Quicky choosing colors and making pallets in R can be a chore.
 This is a simple set of functions to helps choose colors in R,
