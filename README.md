@@ -9,9 +9,11 @@ This is a simple set of functions to help choose colors in R,
 using the locator functionality in R.
 
 Credits:
-The inspiration for this comes from [dsparks](https://gist.github.com/dsparks/4021110).
+The inspiration for this comes from [dsparks](https://gist.github.com/dsparks/4021110),
+[menugget](http://menugget.blogspot.nl/2013/01/choosing-colors-visually-with-getcolors.html#more)
+and [aviadklein](http://aviadklein.wordpress.com/2010/05/21/color-choosing-made-easy/).
 However I wanted to have similar functionality as the `color_picker.R` 
-version from dsparks without the heavy overhead (e.g. packages), with 
+version from dsparks (or the other two) but without the heavy overhead (e.g. packages), with 
 more colors, and a simpler plot to pick from.
 
 ## Installation
