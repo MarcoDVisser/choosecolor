@@ -76,7 +76,6 @@ ColPick<-character(n)
 	colorRampPalette(ColPick, space = "Lab")
 }
 
-
 # WORK IN PROGRESS
 # This function does not work YET!
 color.wheel<-function(){
