@@ -20,10 +20,20 @@ Currently there isn't a release on [CRAN](http://cran.r-project.org/),
 and I don't think there ever will be. You can 
 download the [zip ball](https://github.com/MarcoDVisser/choosecolor/zipball/master) 
 or [tar ball](https://github.com/MarcoDVisser/choosecolor/tarball/master).
-Find the relavent functions in /src.
+Then decompress and run `R CMD INSTALL` on it, 
+or use the **devtools** package to install the development version
+(following code courtesy of [dasonk](https://github.com/Dasonk).
 
-And if you are really going to use it often (like me) just add it to 
-your .Rprofile!
+```r
+## Make sure your current packages are up to date
+update.packages()
+## devtools is required
+library(devtools)
+install_github("findPackage", "Dasonk")
+```
+
+Or find the relavent functions in /src and just 
+add the source code to your .Rprofile!
  
 Usage Examples
 
