@@ -1,0 +1,43 @@
+%\VignetteIndexEntry{choosecolor}
+\documentclass{article}
+
+\begin{document}
+%\SweaveOpts{concordance=TRUE}
+
+\title{choosecolor: Interactively choose colors}
+\date{\today}
+\author{Marco D. Visser}
+\maketitle
+
+\section{Introduction}
+Quicky choosing colors and making pallets in R can be a chore.
+This package combines a simple set of functions to help choose colors 
+for use in R graphics, using the "locator()" functionality.
+
+There are different functions that allow the selection of colors with
+more or less detail.
+
+This is an example session using color.choose():
+
+<<example>>=
+library(color.choose())
+
+# pick a color
+mycol<-color.choose()
+plot(rnorm(100),col=mycol)
+
+
+# Get more detail in choice with the color wheel
+mycol<-color.wheel()
+plot(rnorm(100),col=mycol)
+
+#make a pallete 
+require(datasets)
+#Select 5 colors
+Mypalette<-palette.picker(n=5) 
+# plot an image with the new palette
+image(x,y,volcano,col=Mypalette(1000))
+@
+
+
+\end{document}
