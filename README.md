@@ -46,7 +46,10 @@ Mypalette(10)
 color.wheel()
 
 ```
-Credits:
+# Screenshot
+![](http://i.imgur.com/MjeOzly.jpg)
+
+# Credits:
 The inspiration for this comes from [dsparks](https://gist.github.com/dsparks/4021110),
 [menugget](http://menugget.blogspot.nl/2013/01/choosing-colors-visually-with-getcolors.html#more)
 and [aviadklein](http://aviadklein.wordpress.com/2010/05/21/color-choosing-made-easy/).
