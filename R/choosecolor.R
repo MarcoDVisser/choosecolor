@@ -16,8 +16,6 @@
 #  along with this program; if not, write to the Free Software
 #  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
 #  MA 02110-1301, USA.
-#  
-#  
 
 ##' color.choose
 ##'
@@ -67,8 +65,6 @@ color.choose<-function(detail=100,pick=TRUE){
 		}
 	else {return(cbind(ColVals,locations))}
 }
-
-
 
 ##' palette.picker
 ##'
@@ -171,7 +167,6 @@ color.wheel<-function(detail=200){
   return(ColVals[LightValPick])
   
 }
-
 
 ##' color.pick
 ##'

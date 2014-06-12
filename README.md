@@ -3,16 +3,17 @@ choosecolor
 
 Quickly choosing colors and making palettes in R can be a chore.
 The functions in `choosecolor` are a simple set of functions 
-which can help to rapidly select  colors in R.  Using the "locator"
+which can help to rapidly select colors in R.  Using the "locator"
 functionality in R, it enables an interactive way of selecting colors 
-visually for use in R graphics. 
+visually for use in R graphics. It is built to be lightweight and
+depends on nothing but the base R installation. 
 
-It's nothing fancy, just functional. I hope somebody may find it useful.
+It's nothing fancy, just functional. 
 
 ## Installation
 
 Currently there isn't a release on [CRAN](http://cran.r-project.org/),
-and I don't think there ever will be. You can 
+though there may one day be one. You can still  
 download the [zip](https://github.com/MarcoDVisser/choosecolor/zipball/master) 
 or [tar ball](https://github.com/MarcoDVisser/choosecolor/tarball/master).
 Then decompress and run `R CMD INSTALL` on it, 
@@ -27,9 +28,6 @@ library(devtools)
 install_github("choosecolor", "MarcoDVisser")
 ```
 
-Or find the relevant functions in /R and just 
-add the source code to your .Rprofile.
- 
 ## Usage Examples
 
 ```r
@@ -46,6 +44,7 @@ Mypalette(10)
 color.wheel()
 
 ```
+
 # Screenshot
 ![](http://i.imgur.com/MjeOzly.jpg)
 
@@ -54,5 +53,5 @@ The inspiration for this comes from [dsparks](https://gist.github.com/dsparks/40
 [menugget](http://menugget.blogspot.nl/2013/01/choosing-colors-visually-with-getcolors.html#more)
 and [aviadklein](http://aviadklein.wordpress.com/2010/05/21/color-choosing-made-easy/).
 However I wanted to have similar functionality as the `color_picker.R` 
-version from dsparks (or the other two) but without the heavy overhead (e.g. packages), with 
+version from dsparks (or the other two) but without the heavy overhead (e.g. packages), with
 more colors, and a simpler plot to pick from.

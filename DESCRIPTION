@@ -1,13 +1,12 @@
 Package: choosecolor
 Type: Package
-Title: This package helps you find the sos package
-Version: 1.0
-Date: 21.06.2013
+Title: Interactivy selecting colors
+Version: 0.1
+Date: 11.06.2014
 Author: Marco D. Visser
 Maintainer: Marco D. Visser <marco.d.visser@gmail.com>
-Description: choosecolor is a package for interactivy selecting colors for usage in R graphics.
+Description: choosecolor is a package for interactivy selecting colors for
+    usage in R graphics.
 Suggests:
-License: MIT
-Collate:
-    'onload.R'
-    'choosecolor.R'
+    
+License: NA
