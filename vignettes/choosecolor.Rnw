@@ -10,36 +10,77 @@
 \maketitle
 
 \section{Introduction}
-Quicky choosing colors and making pallets in R can be a chore.
-This package combines a simple set of functions to help choose colors 
-for use in R graphics, using the "locator()" functionality.
 
-There are different functions that allow the selection of colors with
-more or less detail.
+Quickly choosing colors and making palettes in R can be a chore. The functions in choosecolor are a simple set of functions which can help to rapidly and painlessly select colors in R. Using the "locator" functionality in R, it enables an interactive way of selecting colors visually for use in R graphics. It is built to be lightweight and depends on nothing but the base R installation. There are different functions that allow the selection of colors with more or less detail.
 
-This is an example session using color.choose():
+\section{Examples}
+This document details a few functions and basic outputs. The simplist way to choose a color is through usgae of color.pick or color.choose as shown below. First load the function from the package after you have installed it with:
 
-<<example>>=
-library(choosecolor)
+<<hackedfunctions,eval=TRUE,echo=FALSE>>=
+# here I hack the function to remove 
+# the interactive components 
+# so it will run within this document
+
+color.choose<-function(detail=100,pick=TRUE){
+	# dimensions
+	N<-detail
+	#Values
+	values<-seq(0,1,length.out=N)
+
+	# colorgrid
+	locations<-expand.grid(1:N,1:N)
+
+	#loop over all hues
+	ColVals<-sapply(1:N,function(X) hsv(h=values[X],s=1,v=values))
+
+	ColGrid<-matrix(ColVals,ncol=N,nrow=N)
+	par(mar=c(0,0,0,0))
+	image(1:N,1:N,t(matrix(1:N^2,ncol=N,nrow=N)),col=ColGrid)
+	return("red")
+}
+
+palette.picker <- function(n=10) invisible(rep("foo",n))
+
+MyPalette<-colorRampPalette(c("#C41800", "#BB5A00",
+ "#B1B700", "#67BF00", "#0CD100", "#00CB63", 
+"#00A5B7", "#0061B3", "#001FAE", "#5D00DA"), space = "Lab")
+
 @
 
-\begin{verbatim}
 
+<<example1,eval=FALSE>>=
+# load the package 
+require(choosecolor)
+@
+
+After that usage of the various functions is straightforward, for instance the below function produces a
+graphic from which to choose a color:
+
+<<example-2,fig.width=4,fig.height=4>>=
 # pick a color
 mycol<-color.choose()
+@
+
+We chose red, and this can then be directly used in plots:
+
+<<example-2a,fig.width=3,fig.height=3>>=
 plot(rnorm(100),col=mycol)
+@
 
 
-# Get more detail in choice with the color wheel
-mycol<-color.wheel()
-plot(rnorm(100),col=mycol)
+You can also pick a list of colors with which to build a palette:
+<<example-2b,eval=FALSE>>=
+# pick a color
+MyPalette<-palette.picker()
+@
 
-#make a pallete 
+Which can them be used in more complex graphics:
+
+<<example-4,fig.width=4,fig.height=4>>=
 require(datasets)
 #Select 5 colors
-Mypalette<-palette.picker(n=5) 
 # plot an image with the new palette
-image(x,y,volcano,col=Mypalette(1000))
-\end{verbatim}
+image(volcano,col=MyPalette(1000))
+@
 
 \end{document}
