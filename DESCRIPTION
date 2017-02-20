@@ -7,6 +7,5 @@ Author: Marco D. Visser
 Maintainer: Marco D. Visser <marco.d.visser@gmail.com>
 Description: choosecolor is a package for interactivy selecting colors for
     usage in R graphics.
-Suggests:
-    
+Suggests:    
 License: NA
